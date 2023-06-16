@@ -1,0 +1,115 @@
+/* .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+} */
+
+.App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  outline-offset: -1px;
+  margin: 3px;
+  border-spacing: 4px;
+  shape-rendering: geometricPrecision;
+  background-color: #ebedf0;
+  outline: 1px solid rgba(27, 31, 35, 0.06);
+  fill: #ebedf0;
+}
+
+.cell.color-1 {
+  background-color: #9be9a8;
+}
+
+.cell.color-2 {
+  background-color: #40c463;
+}
+
+.cell.color-3 {
+  background-color: #30a14e;
+}
+.cell.color-4 {
+  background-color: #216e39;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+a:hover {
+  transition: 200ms ease-in;
+  text-decoration: underline;
+}
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #216e39;
+}
+
+button {
+  position: relative;
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #24292f;
+    background-color: #f6f8fa;
+    border-color: rgba(31,35,40,0.15);
+    box-shadow: 0 1px 0 rgba(31,35,40,0.04),inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: color,background-color,box-shadow,border-color;
+   text-align: center;
+  top: 100px;
+}
+
+button:hover {
+  background-color: #f3f4f6;
+    border-color: rgba(31,35,40,0.15);
+    transition-duration: .1s;
+}
+
+button {
+  text-align: center;
+  display: block;
+  width: 92px;
+  margin: 0 auto;
+}
